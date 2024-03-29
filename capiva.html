@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo!</title>
+        
+    <style>
+       body{
+        background-color: blue;
+        text-align: center;
+    
+    }
+        .painel{
+        padding-top: 20px;
+        margin: auto;
+        width: 500px;
+        height: 570px;
+        background-color: white;
+        border-radius: 20px;
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    h1{
+      font-size: 500;
+
+    }
+    
+    #sim{
+        
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: red;
+        color: bisque;
+        font-size: 25px;
+        margin-left: -90px;
+        
+        
+    }
+    #nao{
+        position: absolute;
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: red;
+        color: bisque;
+        font-size: 25px;
+        margin-left: 10px;
+        
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="painel">
+        <h1>Volta Comigo?</h1>
+        <img src="https://cdn-icons-png.flaticon.com/256/10776/10776420.png">
+        <h2>O casal Esquilo e Capivara não pode acabar, eles ainda tem muuuuito a viver juntos, sim ou claro?</h2>
+
+
+     <a href="https://i.im.ge/2024/03/29/W7JY6m.capiva.jpeg">  <button id="sim"> Sim! </button> </a>
+    <button onclick= "alerta()" id="nao"> Não! </button>
+
+
+</div>
+<script>
+
+    function fuja(){
+        var botaoNao = document.getElementById("nao")
+        
+        var larguraJanela = window.innerWidth;
+        var alturaJanela = window.innerHeight;
+
+        var maxX = larguraJanela - botaoNao.offsetWidth;
+        var maxY = alturaJanela - botaoNao.offsetHeight;
+
+        var aleatorioX = Math.floor(Math.random() * maxX);
+        var aleatorioY = Math.floor(Math.random() * maxY);
+
+        botaoNao.style.left = aleatorioX + "px";
+        botaoNao.style.top = aleatorioY + "px";
+    }
+
+    function alerta() {
+        
+       alert("ERRO!!!O Casal Arroz e Feijão é Inseparável!!!");
+    }
+    
+</script>
+
+</body>
+</html>
